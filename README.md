@@ -86,7 +86,7 @@ This project simulates a **real-world ML production use case**, focusing on both
 
 ## 🚀 Live Demo 
 
-🔗 https://your-app-link.streamlit.app  
+🔗 https://food-delivery-time-prediction-0.streamlit.app
 
 ---
 
