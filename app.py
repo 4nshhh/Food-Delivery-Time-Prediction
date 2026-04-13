@@ -56,8 +56,6 @@ with col6:
     festival = st.selectbox("Festival:",['No ', 'Yes '])
     city_type = st.selectbox("City Type:",['Urban ', 'Metropolitian ', 'Semi-Urban '])
 
-# st.write(distance, rating,age, order_date,no_of_deliveries,t, pickup_time, weather, traffic, vehicle_condition, order_type, vehicle_type, festival, city_type)
-
 class FeatureEngineer(BaseEstimator, TransformerMixin):
 
     def fit(self, X, y=None):
@@ -82,8 +80,6 @@ traffic_map = {
     "High": 3,
     "Jam": 4
 }
-
-# ['motorcycle ', 'scooter ', 'electric_scooter ']
 
 condition_map = {
     "Good" : 2,
@@ -127,7 +123,7 @@ input_df = pd.DataFrame([input_dict])
 
 @st.cache_resource
 def load_model():
-    return joblib.load("delivery_time_pipeline.pkl")
+    return joblib.load("model/delivery_time_pipeline.pkl")
 
 pipeline = load_model()
 

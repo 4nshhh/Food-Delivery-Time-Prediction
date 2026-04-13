@@ -74,12 +74,12 @@ This project simulates a **real-world ML production use case**, focusing on both
 
 ### 🖥️ UI
 <p align="center">
-  <img src="screenshot.png" width="300"/>
+  <img src="assets/screenshot.png" width="300"/>
 </p>
 
 ### 🎥 Demo Video
 <p align="center">
-  <img src="demo.gif" width="400"/>
+  <img src="assets/demo.gif" width="400"/>
 </p>
 
 ---
