@@ -1,0 +1,14 @@
+# IDE files
+.idea/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Python cache
+__pycache__/
+
+# Model files
+*.pkl
+
+# Optional (recommended)
+.env
