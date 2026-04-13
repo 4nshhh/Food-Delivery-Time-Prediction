@@ -142,15 +142,36 @@ if predict:
         lower = prediction - 4
         upper = prediction + 4
         st.subheader("Prediction Result")
-        st.success(f"Estimated Delivery Time: ~{prediction[0]:.2f} minutes")
+        st.markdown(f"""
+        <div style="
+            background: linear-gradient(135deg, #16a34a, #22c55e);
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            font-size: 22px;
+            font-weight: bold;
+        ">
+        🚀 Estimated Delivery Time: {prediction[0]:.2f} minutes
+        </div>
+        """, unsafe_allow_html=True)
+
         st.write(f"Range: {lower[0]:.2f} - {upper[0]:.2f} minutes")
         st.info(f"Estimated Delivery Speed: {speed:.2f} km/h")
 
-st.markdown("---")
+st.write("---")
 
-st.caption("""
-Developed by **Ansh Panchal**
+st.components.v1.html("""
+<div style="
+    text-align: center;
+    font-size: 14px;
+    color: #94a3b8;
+    padding: 10px;
+">
+    👨‍💻 <b>Ansh Panchal</b> | AIML Student<br>
+    📊 Passionate about Data Science & ML Engineering<br><br>
 
-Focused on **Data Science, Machine Learning, and Predictive Modeling**  
-Building real-world ML applications using **Python, Scikit-learn, XGBoost, and Streamlit**
-""")
+    🔗 Connect with me:<br>
+    <a href="https://www.linkedin.com/in/4nshh/" target="_blank" style="color:#22c55e;">LinkedIn</a> |
+    <a href="https://github.com/4nshh" target="_blank" style="color:#22c55e;">GitHub</a>
+</div>
+""", height=150)
